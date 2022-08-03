@@ -1,0 +1,308 @@
+* {
+	box-sizing: border-box;
+  }
+  
+#divLogin
+{
+
+position: absolute;
+top: 300px;
+left: 30%;
+width: 40%;
+height: 400px;
+background-color: #F8F8FF;
+display: flex;
+border-radius: 10px;
+transition: 0.3s;
+box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.21);
+}
+
+
+#divSignup
+{
+
+position: absolute;
+top: 80px;
+left: 30%;
+width: 40%;
+height: 800px;
+background-color: #F8F8FF;
+display: flex;
+border-radius: 10px;
+transition: 0.3s;
+box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.21);
+
+display: none;
+}
+
+#divSignup:hover
+{
+	box-shadow:2px 5px 8px 3px rgba(133, 126, 126, 0.7); 
+}
+
+#divLogin:hover
+{
+	box-shadow:2px 5px 8px 3px rgba(133, 126, 126, 0.7); 
+}
+
+#divRight
+{
+	position: absolute;
+	top: 300px;
+	right: 5px;
+	width: 25%;
+	height: 400px;
+	background-color: rgb(19, 64, 89);
+	display: flex;
+	border-radius: 10px;
+	transition: 0.3s;
+	box-shadow: 2px 3px 5px 2px rgba(80, 82, 83, 0.74);
+	
+	
+
+}
+#divRight:hover
+{
+	box-shadow:2px 5px 8px 3px rgba(133, 126, 126, 0.7);
+}
+
+#divLeft
+{
+	position: absolute;
+	top: 300px;
+	left: 5px;
+	width: 25%;
+	height: 400px;
+	background-color: rgb(19, 64, 89);
+	display: flex;
+	border-radius: 10px;
+	transition: 0.3s;
+	box-shadow: 2px 3px 5px 2px rgba(80, 82, 83, 0.74);
+	
+	
+
+}
+#divLeft:hover
+{
+	box-shadow:2px 5px 8px 3px rgba(133, 126, 126, 0.7);
+}
+
+#divLogo
+{
+
+	max-width: 100%;
+	height: 100px;
+	display: flex;
+
+
+}
+
+#divheader
+{
+	margin-left: 660px ;
+	margin-top: 18px;
+	
+	max-width: 100%;
+	
+
+
+}
+
+
+#divFooter
+{
+	position: absolute;
+	top:800px;
+	
+	width: 100%;
+	height: 425px;
+	background-color: rgb(19, 64, 89);
+	display: flex;
+	border-radius: 10px;
+	transition: 0.3s;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.21);
+	
+	
+}
+
+
+#slideshow { 
+	position: relative; 
+
+
+  }
+  
+  #slideshow > div { 
+	position: absolute; 
+	
+  }
+
+
+
+@media screen and (max-width:1000px) {
+
+	#divFooter
+
+{
+	top: 2000px;
+	height: 1200px;
+}
+
+}
+
+@media screen and (max-width:1000px) {
+
+	#divLogin
+
+{
+	left: 1px;
+	top:805px;
+	width: 100%;
+}
+
+}
+
+@media screen and (max-width:1000px) {
+
+	#divSignup
+
+{
+	left: 1px;
+	top:805px;
+	width: 100%;
+}
+
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+
+	#divheader
+	{
+		margin-left: 1px ;
+		margin-top: 105px;
+		width: 100%;
+	}
+
+	#divRight
+
+{
+	left: 1px;
+	top: 1600px;
+	width: 100%;
+}
+
+}
+
+input[type=text],[type=password],[type=email],[type=select],[type=tel]
+{
+	
+	width: 50%;
+	height: 35px;
+	border-top: 0;
+	border-left: 0;
+	border-right:1px solid rgb(102, 100, 100);
+	border-bottom: 1px solid rgb(102, 100, 100);
+	border-radius: 5px;
+	background-color: #ebebf1;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3) ;
+	
+
+}
+input[type=password]
+{
+	
+	width: 50%;
+	height: 35px;
+	border-top: 0;
+	border-left: 0;
+	border-right:1px solid rgb(102, 100, 100);
+	border-bottom: 1px solid rgb(102, 100, 100);
+	border-radius: 5px;
+	background-color: #ebebf1;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3) ;
+	
+
+}
+input[type=text]:hover
+{
+
+	width: 70%;
+	height: 40px;
+	transition: 0.3s;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) ;
+}
+input[type=password]:hover
+{
+
+	width: 70%;
+	height: 40px;
+	transition: 0.3s;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) ;
+}
+
+input[type=submit]
+{
+
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	width: 50%;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #6ac098;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) ;
+
+}
+
+button
+{
+
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	width: 10%;
+	height: 25px;
+	border-radius: 5px;
+	background-color: #6ac098;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) ;
+
+
+}
+
+button:hover
+{
+	background-color: rebeccapurple ;
+	transition: 0.3s;
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3) ;
+}
+
+
+
+input[type=submit]:hover
+{
+	background-color: rebeccapurple ;
+	transition: 0.3s;
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3) ;
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+
+	#divLeft
+
+{
+	left: 1px;
+	top: 400px;
+	width: 100%;
+}
+
+}
+
+

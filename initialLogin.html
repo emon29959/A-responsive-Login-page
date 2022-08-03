@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Initial page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="initialLogin.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <style>
+    #main {
+      width: 90%;
+      height: 1080px;
+      border: 1px solid #c3c3c3;
+      display: flex;
+      margin: auto;
+      background-color: #F5F5F5;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    @media screen and (max-width:700px) {
+      #main {
+        width: 100%;
+      }
+
+    }
+  </style>
+
+  <script>
+
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function () {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="main">
+    <div id="divLogo">
+      <img style="max-width:250px;height:100px;position: fixed;" src="logo_1_250x100.png" alt="logo">
+
+    </div>
+
+    <div id="divheader">
+      <p style="text-align: center;font-family:sans-serif;font-size:45px;">Wellcome to Cloud<span
+          style="color: red;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 50px;">X</span>
+      </p>
+      <p style="text-align: center;">Cloud<span style="color: red;">X</span> is an excellent social media platform where
+        <br> you can interact with known and unknown people.<br>
+        Please <span style="color: rgb(39, 154, 189);font-size: large;">Login</span> to start connecting with peoples.
+      </p>
+    </div>
+
+
+    <div id="divLeft">
+      <img style="max-width: 100%;box-shadow: 10px silver;" src="phone.png">
+      <p style="color: white; top: 20px;margin-left: 5px;font-size: small;">Cloud<span
+          style="color: red;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 25px;">X</span><br>
+        is a great app for video,audio and chating.
+        There are many groups and pages where you can find many interested things.So dont be late to install this app in
+        your phone.<br> <br>
+        <a href="#"><img style="width:200px;height:133.3px;" src="app-store-png-logo-33123.png"></a>
+      </p>
+
+    </div>
+
+
+
+    <div id="divSignup">
+
+      <p style="text-align: center;color: goldenrod;margin-top: 20px;"> Please fill the boxes to create an account</p>
+      <div class="container">
+        <form style=" margin: 40px 0 0 235px;" action="#" method="POST">
+
+          <label style="display: block;" for="fname"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" name="fname" required><br><br>
+
+          <label style="display: block;" for="lname"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="lname" required><br><br>
+
+
+          <label style="display: block;" for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter username" name="username" required><br><br>
+
+          <label style="display: block;" for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required><br><br>
+
+          <label style="display: block;" for="phone"><b>Phone No</b></label>
+          <input type="tel" placeholder="Enter Phone" name="phone" required><br><br>
+
+          <label style="display: block;" for="gender"><b>Gender</b></label>
+          <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+          </select><br><br>
+          <label style="display: block;" for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter password" name="password"><br><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Remember me?
+          </label><br>
+          <input type="submit" value="Signup">
+        </form><br>
+       
+      </div>
+      <p style="text-align: center;">Already have an account?  <button style="display: block;color: rgb(255, 255, 255);text-align: center;margin-left: 300px;" onclick="myFunction2()">Login</button> </p>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("divSignup");
+        var y = document.getElementById("divLogin");
+        var z = document.getElementById("divFooter");
+        if (window.getComputedStyle(x).display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+          z.style.top="2500px";
+
+        }
+      }
+
+      function myFunction2() {
+        var a = document.getElementById("divLogin");
+        var b = document.getElementById("divSignup");
+        var c = document.getElementById("divFooter");
+
+          a.style.display = "block";
+          b.style.display = "none";
+          c.style.top="800px";
+
+
+      }
+      </script>
+
+
+    <div id="divLogin">
+
+      <div class="container">
+        <form style=" margin: 75px 0 0 235px;" action="#" method="POST">
+          <label style="display: block;" for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter username" name="username" required><br><br>
+          <label style="display: block;" for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter password" name="password"><br><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Remember me?
+          </label><br>
+          <input type="submit" value="Login">
+        </form><br>
+        <p style="text-align: center;">Don't have an account yet?  <button style="display: block;color: rgb(255, 255, 255);text-align: center;margin-left: 300px;" onclick="myFunction()">Signup</button> </p>
+           
+      </div>
+
+    </div>
+
+    <div id="divRight">
+      <div id="slideshow">
+        <div>
+          <img src="1.jpg">
+        </div>
+        <div>
+          <img src="2.jpg">
+        </div>
+        <div>
+          <img src="3.jpg">
+        </div>
+        <div>
+          <img src="4.jpg">
+        </div>
+        <div>
+          <img src="5.jpg">
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div id="divFooter">
+      <!-- Footer -->
+      <footer class="page-footer font-small unique-color-dark" style="margin: auto;">
+
+        <div style="background-color: #37377c;">
+          <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0" style="color: #F5F5F5;">Get connected with us on other social networks!</h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram white-text"> </i>
+                </a>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+          <!-- Grid row -->
+          <div class="row mt-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color: white;">
+
+              <!-- Content -->
+              <h6 class="font-weight-bold">CloudX</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>CloudX is one of the largest social networking platform.You can express and share your thought to
+                others. also you can remain updated with current affairs.So lets get connected with others using
+                CloudX.!</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white;">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Services</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a href="#!">X</a>
+              </p>
+              <p>
+                <a href="#!">Y</a>
+              </p>
+              <p>
+                <a href="#!">Z</a>
+              </p>
+              <p>
+                <a href="#!">A</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white;">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a href="#!">Your Account</a>
+              </p>
+              <p>
+                <a href="#!">Become an Affiliate</a>
+              </p>
+              <p>
+                <a href="#!">Language</a>
+              </p>
+              <p>
+                <a href="#!">Help</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color: white;">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Contact us</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <i class="fas fa-home mr-3"></i> Stamford University, Dhaka 10012, BD
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> emon29959@gmail.com
+              </p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 01915355090
+              </p>
+              <p>
+                <i class="fas fa-print mr-3"></i> + 01 234 567 89
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white;">© 2021 Copyright:
+          <a href="#" style="color: white;"> CloudX.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
